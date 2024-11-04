@@ -1,12 +1,12 @@
 #include "C:\Users\acer\Documents\GitHub\oneononebj\headers\Game.h"
 #include <iostream>
 
-// Constructorul inițializează jocul cu numele jucătorului
+// constructor care initializeaza jocul cu numele jucatorului
 Game::Game(const std::string& playerName) : player(playerName), dealer("Dealer") {
     deck.shuffle();
 }
 
-// Simulează o rundă de joc
+// simulare runda de joc
 void Game::playRound() {
     player.addCard(deck.dealCard());
     player.addCard(deck.dealCard());

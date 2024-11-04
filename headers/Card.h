@@ -10,17 +10,11 @@ private:
     int value;
 
 public:
-    // Constructor cu parametri
-    Card(const std::string& suit, int value);
 
-    // Getter pentru valoarea cărții
-    int getValue() const;
-
-    // Getter pentru suit-ul cărții
-    std::string getSuit() const;
-
-    // Operator de afișare
-    friend std::ostream& operator<<(std::ostream& os, const Card& card);
+    Card(const std::string& suit, int value);// constructor cu parametri
+    int getValue() const;// getter pentru valoarea cartii
+    std::string getSuit() const;// getter pentru suit-ul cartii
+    friend std::ostream& operator<<(std::ostream& os, const Card& card);// operator de afisare
 };
 
 #endif // CARD_H

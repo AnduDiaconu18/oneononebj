@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    Game game("Player 1");
+    Game game("Player ");
     game.playRound();
     game.determineWinner();
 

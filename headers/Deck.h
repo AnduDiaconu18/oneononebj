@@ -10,21 +10,15 @@ class Deck {
 private:
     std::vector<Card> cards;
 
-    // Funcția de inițializare a pachetului de cărți
-    void initializeDeck();
+
+    void initializeDeck();// functia de inițializare a pachetului de carti
 
 public:
-    // Constructor care inițializează și amestecă pachetul de cărți
-    Deck();
 
-    // Funcție de amestecare a cărților
-    void shuffle();
-
-    // Funcție care împarte o carte din pachet
-    Card dealCard();
-
-    // Operator de afișare
-    friend std::ostream& operator<<(std::ostream& os, const Deck& deck);
+    Deck();// constructor care initializeaza si amesteca pachetul de carti
+    void shuffle();// functie de amestecare a cartilor
+    Card dealCard();// functie care imparte o carte din pachet
+    friend std::ostream& operator<<(std::ostream& os, const Deck& deck);// operator de afisare
 };
 
 #endif // DECK_H

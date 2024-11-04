@@ -11,14 +11,10 @@ private:
     Player dealer;
 
 public:
-    // Constructor care inițializează jocul cu numele jucătorului
-    Game(const std::string& playerName);
 
-    // Joacă o rundă de joc
-    void playRound();
-
-    // Determină câștigătorul rundei
-    void determineWinner();
+    Game(const std::string& playerName);// constructor care initializeaza jocul cu numele jucatorului
+    void playRound();// joaca o runda
+    void determineWinner();// determina castigatorul rundei
 };
 
 #endif // GAME_H

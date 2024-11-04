@@ -11,20 +11,12 @@ private:
     std::vector<Card> hand;
 
 public:
-    // Constructor cu parametri
-    Player(const std::string& name);
 
-    // Adaugă o carte în mâna jucătorului
-    void addCard(const Card& card);
-
-    // Calculează scorul curent al jucătorului
-    int calculateScore() const;
-
-    // Getter pentru numele jucătorului
-    std::string getName() const;
-
-    // Operator de afișare
-    friend std::ostream& operator<<(std::ostream& os, const Player& player);
+    Player(const std::string& name);// constructor cu parametri
+    void addCard(const Card& card);// adauga o carte in mana jucatorului
+    int calculateScore() const;// calculeaza scorul curent al jucatorului
+    std::string getName() const;// getter pentru numele jucatorului
+    friend std::ostream& operator<<(std::ostream& os, const Player& player);// operator de afisare
 };
 
 #endif // PLAYER_H

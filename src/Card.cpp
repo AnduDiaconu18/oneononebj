@@ -1,20 +1,17 @@
 #include "C:\Users\acer\Documents\GitHub\oneononebj\headers\Card.h"
 
-// Constructorul cu parametri pentru Card
-Card::Card(const std::string& suit, int value) : suit(suit), value(value) {}
 
-// Returnează valoarea cărții
+Card::Card(const std::string& suit, int value) : suit(suit), value(value) {}// constructor cu parametri pentru Card
+
 int Card::getValue() const {
     return value;
-}
+}// returnează valoarea cartii
 
-// Returnează simbolul cărții
 std::string Card::getSuit() const {
     return suit;
-}
+}// returnează simbolul cartii
 
-// Operator de afișare pentru Card
 std::ostream& operator<<(std::ostream& os, const Card& card) {
     os << card.suit << " " << card.value;
     return os;
-}
+}// operator de afisare pentru Card
