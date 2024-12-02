@@ -1,3 +1,8 @@
+/**
+* @file Game.h
+ * @brief Defines the Game class with Blackjack rules.
+ */
+
 #ifndef GAME_H
 #define GAME_H
 
@@ -7,14 +12,15 @@
 class Game {
 private:
     Deck deck;
-    Player player;
-    Player dealer;
+    PlayerBase* player;
+    PlayerBase* dealer;
+
+    void setupGame();
 
 public:
-
-    Game(const std::string& playerName);// constructor care initializeaza jocul cu numele jucatorului
-    void playRound();// joaca o runda
-    void determineWinner();// determina castigatorul rundei
+    Game(const std::string& playerName);
+    void playRound();
+    ~Game();
 };
 
 #endif // GAME_H
