@@ -1,0 +1,25 @@
+\doxysection{Hand\+Manager.\+h}
+\hypertarget{_hand_manager_8h_source}{}\label{_hand_manager_8h_source}\index{headers/HandManager.h@{headers/HandManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HANDMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HANDMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_card_8h}{C:\(\backslash\)Users\(\backslash\)acer\(\backslash\)Documents\(\backslash\)GitHub\(\backslash\)oneononebj\(\backslash\)headers\(\backslash\)Card.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hand_manager}{HandManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ T\&\ player;\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_hand_manager}{HandManager}}(T\&\ player)\ :\ player(player)\ \{\}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ addCardToHand(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_card}{Card}}\&\ card)\ \{\ player.addCard(card);\ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ resetHand()\ \{\ player.resetHand();\ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ getScore()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ player.calculateScore();\ \}}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ HANDMANAGER\_H}}
+
+\end{DoxyCode}

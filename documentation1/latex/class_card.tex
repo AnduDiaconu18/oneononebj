@@ -1,0 +1,121 @@
+\doxysection{Card Class Reference}
+\hypertarget{class_card}{}\label{class_card}\index{Card@{Card}}
+
+
+Represents a playing card with a suit and value.  
+
+
+
+
+{\ttfamily \#include $<$Card.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_a569e0a5fbe2fc61dfe0105a0ded81059}{Card}} (const std\+::string \&suit, const std\+::string \&rank)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_card}{Card} with the specified suit and rank. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_card_acc9b1b81d72e09c5a70036d0b91b4b30}{get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the value of the card for scoring in Blackjack. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_card_aee4149cf300420237604615f7b57b1e8}{get\+Suit}} () const
+\begin{DoxyCompactList}\small\item\em Gets the suit of the card. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_card_a1ecbe191cbda9faca7029c0b7363bb78}{get\+Rank}} () const
+\begin{DoxyCompactList}\small\item\em Gets the rank of the card. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_card_a3bbd82d9047456c6ecbe51a56ca7a584}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_card}{Card}} \&card)
+\begin{DoxyCompactList}\small\item\em Prints the card information to the output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a playing card with a suit and value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_card_a569e0a5fbe2fc61dfe0105a0ded81059}\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}}
+{\footnotesize\ttfamily \label{class_card_a569e0a5fbe2fc61dfe0105a0ded81059} 
+Card\+::\+Card (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{suit}{, }\item[{const std\+::string \&}]{rank}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_card}{Card} with the specified suit and rank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suit} & The suit of the card. \\
+\hline
+{\em rank} & The rank of the card. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_card_a1ecbe191cbda9faca7029c0b7363bb78}\index{Card@{Card}!getRank@{getRank}}
+\index{getRank@{getRank}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getRank()}{getRank()}}
+{\footnotesize\ttfamily \label{class_card_a1ecbe191cbda9faca7029c0b7363bb78} 
+std\+::string Card\+::get\+Rank (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the rank of the card. 
+
+\begin{DoxyReturn}{Returns}
+The rank of the card. 
+\end{DoxyReturn}
+\Hypertarget{class_card_aee4149cf300420237604615f7b57b1e8}\index{Card@{Card}!getSuit@{getSuit}}
+\index{getSuit@{getSuit}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getSuit()}{getSuit()}}
+{\footnotesize\ttfamily \label{class_card_aee4149cf300420237604615f7b57b1e8} 
+std\+::string Card\+::get\+Suit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the suit of the card. 
+
+\begin{DoxyReturn}{Returns}
+The suit of the card. 
+\end{DoxyReturn}
+\Hypertarget{class_card_acc9b1b81d72e09c5a70036d0b91b4b30}\index{Card@{Card}!getValue@{getValue}}
+\index{getValue@{getValue}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_card_acc9b1b81d72e09c5a70036d0b91b4b30} 
+int Card\+::get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the value of the card for scoring in Blackjack. 
+
+\begin{DoxyReturn}{Returns}
+The value of the card. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_card_a3bbd82d9047456c6ecbe51a56ca7a584}\index{Card@{Card}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_card_a3bbd82d9047456c6ecbe51a56ca7a584} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{class_card}{Card}} \&}]{card}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Prints the card information to the output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em card} & The card to print. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_card_8h}{Card.\+h}}\item 
+src/Card.\+cpp\end{DoxyCompactItemize}

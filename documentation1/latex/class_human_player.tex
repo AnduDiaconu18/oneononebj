@@ -1,0 +1,54 @@
+\doxysection{Human\+Player Class Reference}
+\hypertarget{class_human_player}{}\label{class_human_player}\index{HumanPlayer@{HumanPlayer}}
+
+
+Represents a human-\/controlled player.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Human\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_human_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_human_player_a8bc11aceb7a3dc49d94255fedbcc185d}\label{class_human_player_a8bc11aceb7a3dc49d94255fedbcc185d} 
+{\bfseries Human\+Player} (const std\+::string \&\mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_player_base}{Player\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Player\+Base} (const std\+::string \&\mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}})
+\item 
+virtual void {\bfseries add\+Card} (const \mbox{\hyperlink{class_card}{Card}} \&card)
+\item 
+virtual void {\bfseries reset\+Hand} ()
+\item 
+virtual int {\bfseries calculate\+Score} () const
+\begin{DoxyCompactList}\small\item\em Updated to handle Ace logic. \end{DoxyCompactList}\item 
+virtual std\+::string {\bfseries get\+Name} () const
+\item 
+virtual bool {\bfseries is\+Bust} () const
+\begin{DoxyCompactList}\small\item\em Checks if the player has exceeded 21. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_player_base}{Player\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Name of the player. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_card}{Card}} $>$ {\bfseries hand}
+\begin{DoxyCompactList}\small\item\em Cards in the player\textquotesingle{}s hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a human-\/controlled player. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_player_8h}{Player.\+h}}\end{DoxyCompactItemize}

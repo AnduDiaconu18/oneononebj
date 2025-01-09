@@ -1,0 +1,33 @@
+\doxysection{Singleton\+Deck.\+h}
+\hypertarget{_singleton_deck_8h_source}{}\label{_singleton_deck_8h_source}\index{headers/SingletonDeck.h@{headers/SingletonDeck.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SINGLETONDECK\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SINGLETONDECK\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_card_8h}{Card.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_singleton_deck}{SingletonDeck}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr<SingletonDeck>\ instance;\ }
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<Card>\ cards;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_singleton_deck}{SingletonDeck}}();\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ initializeDeck();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ std::shared\_ptr<SingletonDeck>\ getInstance();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ shuffle();}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_card}{Card}}\ dealCard();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ remainingCards()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SINGLETONDECK\_H}}
+
+\end{DoxyCode}

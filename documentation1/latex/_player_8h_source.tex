@@ -1,0 +1,41 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\index{headers/Player.h@{headers/Player.h}}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PLAYER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PLAYER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_card_8h}{Card.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player_base}{PlayerBase}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ \mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ std::vector<Card>\ \mbox{\hyperlink{class_player_base_acfdb4e7e8aeca5ef644d728dee74c8e9}{hand}};\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_player_base}{PlayerBase}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}});}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ addCard(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_card}{Card}}\&\ card);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ resetHand();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_base_a8433d5a63648129959f8a3b7a51906a6}{calculateScore}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_base_ad37b6d4a83f8336bdc2837fd81a3aae0}{isBust}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_player_base}{\string~PlayerBase}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_player_base}{PlayerBase}}\&\ player);}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_human_player}{HumanPlayer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_player_base}{PlayerBase}}\ \{}
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_human_player}{HumanPlayer}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}})\ :\ \mbox{\hyperlink{class_player_base}{PlayerBase}}(\mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}})\ \{\}}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_i_player}{AIPlayer}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_player_base}{PlayerBase}}\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_a_i_player}{AIPlayer}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}})\ :\ \mbox{\hyperlink{class_player_base}{PlayerBase}}(\mbox{\hyperlink{class_player_base_a7499d85861bf268fa14b0e89bb399956}{name}})\ \{\}}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLAYER\_H}}
+
+\end{DoxyCode}
