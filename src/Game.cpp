@@ -2,9 +2,9 @@
 #include <iostream>
 
 Game::Game(const std::string& playerName) {
+    deck = SingletonDeck::getInstance();
     player = new HumanPlayer(playerName);
     dealer = new AIPlayer("Dealer");
-    deck.shuffle();
 }
 
 void Game::setupGame() {
@@ -14,11 +14,13 @@ void Game::setupGame() {
 
 void Game::playRound() {
     setupGame();
-    player->addCard(deck.dealCard());
-    player->addCard(deck.dealCard());
-    dealer->addCard(deck.dealCard());
+    notifyAll("Game started!");
 
-    std::cout << *player << "\n";
+    player->addCard(deck->dealCard());
+    player->addCard(deck->dealCard());
+    dealer->addCard(deck->dealCard());
+
+    std::cout << *player << std::endl;
 
     while (!player->isBust()) {
         std::cout << "Hit or Stand? (h/s): ";
@@ -26,8 +28,8 @@ void Game::playRound() {
         std::cin >> choice;
 
         if (choice == 'h') {
-            player->addCard(deck.dealCard());
-            std::cout << *player << "\n";
+            player->addCard(deck->dealCard());
+            std::cout << *player << std::endl;
         } else {
             break;
         }
@@ -38,11 +40,11 @@ void Game::playRound() {
         return;
     }
 
-    std::cout << *dealer << "\n";
+    std::cout << *dealer << std::endl;
 
     while (dealer->calculateScore() < 17) {
-        dealer->addCard(deck.dealCard());
-        std::cout << *dealer << "\n";
+        dealer->addCard(deck->dealCard());
+        std::cout << *dealer << std::endl;
     }
 
     if (dealer->isBust()) {

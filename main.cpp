@@ -6,6 +6,18 @@
 #include <iostream>
 #include <string>
 #include "C:\Users\acer\Documents\GitHub\oneononebj\headers\Game.h"
+#include "C:\Users\acer\Documents\GitHub\oneononebj\headers\Observer.h"
+
+/**
+ * @class ConsoleObserver
+ * @brief A concrete implementation of the Observer pattern that outputs messages to the console.
+ */
+class ConsoleObserver : public Observer {
+public:
+    void notify(const std::string& message) override {
+        std::cout << "[Notification]: " << message << std::endl;
+    }
+};
 
 int main() {
     std::cout << "Welcome to Blackjack!\n";
@@ -13,8 +25,12 @@ int main() {
     std::string playerName;
     std::cin >> playerName;
 
-    // Initialize the game with the player's name
+    // Create the game
     Game game(playerName);
+
+    // Attach an observer for notifications
+    ConsoleObserver consoleObserver;
+    game.addObserver(&consoleObserver);
 
     char playAgain = 'y';
     while (playAgain == 'y' || playAgain == 'Y') {

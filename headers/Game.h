@@ -1,19 +1,19 @@
-/**
-* @file Game.h
- * @brief Defines the Game class with Blackjack rules.
- */
-
 #ifndef GAME_H
 #define GAME_H
 
-#include "Deck.h"
+#include "SingletonDeck.h"
+#include "Observer.h"
 #include "Player.h"
 
-class Game {
+/**
+ * @class Game
+ * @brief The main game logic for Blackjack.
+ */
+class Game : public GameNotifier {
 private:
-    Deck deck;
-    PlayerBase* player;
-    PlayerBase* dealer;
+    std::shared_ptr<SingletonDeck> deck; ///< Shared instance of the deck.
+    PlayerBase* player; ///< Human player.
+    PlayerBase* dealer; ///< Dealer AI.
 
     void setupGame();
 

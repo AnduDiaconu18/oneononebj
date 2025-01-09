@@ -46,13 +46,16 @@ add_executable(${PROJECT_NAME}
     main.cpp
     generated/src/Helper.cpp
         headers/Card.h
-        headers/Deck.h
         headers/Player.h
         headers/Game.h
         src/Card.cpp
-        src/Deck.cpp
         src/Game.cpp
         src/Player.cpp
+        headers/SingletonDeck.h
+        src/SingletonDeck.cpp
+        headers/Observer.h
+        src/Observer.cpp
+        headers/HandManager.h
 )
 
 include(cmake/CompilerFlags.cmake)
