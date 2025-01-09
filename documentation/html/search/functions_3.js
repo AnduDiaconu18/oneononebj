@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['initializedeck_0',['initializeDeck',['../class_deck.html#a5145af1d1479536fae62e11a340e4b6c',1,'Deck']]],
-  ['isbust_1',['isBust',['../class_player_base.html#ad37b6d4a83f8336bdc2837fd81a3aae0',1,'PlayerBase']]]
+  ['singletondeck_0',['SingletonDeck',['../class_singleton_deck.html#a0c45efd80afe609fdb54e5badf19fd2d',1,'SingletonDeck']]]
 ];

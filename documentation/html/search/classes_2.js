@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['deck_0',['Deck',['../class_deck.html',1,'']]],
-  ['deckemptyexception_1',['DeckEmptyException',['../class_deck_empty_exception.html',1,'']]]
+  ['game_0',['Game',['../class_game.html',1,'']]],
+  ['gamenotifier_1',['GameNotifier',['../class_game_notifier.html',1,'']]]
 ];

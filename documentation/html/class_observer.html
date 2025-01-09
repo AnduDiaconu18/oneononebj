@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Blackjack Game: headers Directory Reference</title>
+<title>Blackjack Game: Observer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,34 +81,41 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
-  <div class="headertitle"><div class="title">headers Directory Reference</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_observer-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Observer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_observer.html" title="Observer pattern to notify players about game updates.">Observer</a> pattern to notify players about game updates.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_observer_8h_source.html">Observer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Observer:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_observer.png" usemap="#Observer_map" alt=""/>
+  <map id="Observer_map" name="Observer_map">
+<area href="class_console_observer.html" title="A concrete implementation of the Observer pattern that outputs messages to the console." alt="ConsoleObserver" shape="rect" coords="0,56,112,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_card_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_card_8h.html">Card.h</a></td></tr>
-<tr class="memdesc:_card_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file defines the <a class="el" href="class_card.html" title="Represents a playing card with a suit and value.">Card</a> class, which represents a playing card with a suit and a value. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_game_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>Game.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_hand_manager_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>HandManager.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_observer_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>Observer.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_player_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_player_8h.html">Player.h</a></td></tr>
-<tr class="memdesc:_player_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file defines the <a class="el" href="class_player_base.html" title="Abstract base class representing a generic player in the game.">PlayerBase</a> class and its derived classes: <a class="el" href="class_human_player.html" title="Represents a human-controlled player.">HumanPlayer</a> and <a class="el" href="class_a_i_player.html" title="Represents an AI-controlled player.">AIPlayer</a>. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="_singleton_deck_8h_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><b>SingletonDeck.h</b></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa3ea3318835eb5e18e0436fa3b5c1deb" id="r_aa3ea3318835eb5e18e0436fa3b5c1deb"><td class="memItemLeft" align="right" valign="top"><a id="aa3ea3318835eb5e18e0436fa3b5c1deb" name="aa3ea3318835eb5e18e0436fa3b5c1deb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> (const std::string &amp;message)=0</td></tr>
+<tr class="separator:aa3ea3318835eb5e18e0436fa3b5c1deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_observer.html" title="Observer pattern to notify players about game updates.">Observer</a> pattern to notify players about game updates. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>headers/<a class="el" href="_observer_8h_source.html">Observer.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

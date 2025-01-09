@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['dealcard_0',['dealCard',['../class_deck.html#a7a0547af6395feb13f4402a2a63b79fe',1,'Deck']]],
-  ['deck_1',['Deck',['../class_deck.html',1,'Deck'],['../class_deck.html#a57ae1cb4ac6fd61c249cefb2db85eb99',1,'Deck::Deck()']]],
-  ['deck_2eh_2',['Deck.h',['../_deck_8h.html',1,'']]],
-  ['deckemptyexception_3',['DeckEmptyException',['../class_deck_empty_exception.html',1,'']]]
+  ['dealer_0',['dealer',['../class_game.html#a3107f4b16a11a85e8da7c34fa92fe6da',1,'Game']]],
+  ['deck_1',['deck',['../class_game.html#a80695fadf46332b7c2308b8c95f4b636',1,'Game']]]
 ];

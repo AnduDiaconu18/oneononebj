@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Blackjack Game: main.cpp File Reference</title>
+<title>Blackjack Game: GameNotifier Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,34 +85,53 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="class_game_notifier-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">GameNotifier Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Entry point for the Blackjack game. Runs a complete game session.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;C:\Users\acer\Documents\GitHub\oneononebj\headers\Game.h&quot;</code><br />
-<code>#include &quot;C:\Users\acer\Documents\GitHub\oneononebj\headers\Observer.h&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_console_observer.html">ConsoleObserver</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concrete implementation of the <a class="el" href="class_observer.html" title="Observer pattern to notify players about game updates.">Observer</a> pattern that outputs messages to the console.  <a href="class_console_observer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<p>Concrete subject class implementing the observer pattern.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_observer_8h_source.html">Observer.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for GameNotifier:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_game_notifier.png" usemap="#GameNotifier_map" alt=""/>
+  <map id="GameNotifier_map" name="GameNotifier_map">
+<area href="class_game.html" title="The main game logic for Blackjack." alt="Game" shape="rect" coords="0,56,85,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aadafd0b8c0d331910676beec6706d097" id="r_aadafd0b8c0d331910676beec6706d097"><td class="memItemLeft" align="right" valign="top"><a id="aadafd0b8c0d331910676beec6706d097" name="aadafd0b8c0d331910676beec6706d097"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addObserver</b> (<a class="el" href="class_observer.html">Observer</a> *observer)</td></tr>
+<tr class="separator:aadafd0b8c0d331910676beec6706d097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22bf6ffcf9dda526309e342b652cf7fa" id="r_a22bf6ffcf9dda526309e342b652cf7fa"><td class="memItemLeft" align="right" valign="top"><a id="a22bf6ffcf9dda526309e342b652cf7fa" name="a22bf6ffcf9dda526309e342b652cf7fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeObserver</b> (<a class="el" href="class_observer.html">Observer</a> *observer)</td></tr>
+<tr class="separator:a22bf6ffcf9dda526309e342b652cf7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aadaa9cb21ad4c60dcdaa366ad6c57b" id="r_a7aadaa9cb21ad4c60dcdaa366ad6c57b"><td class="memItemLeft" align="right" valign="top"><a id="a7aadaa9cb21ad4c60dcdaa366ad6c57b" name="a7aadaa9cb21ad4c60dcdaa366ad6c57b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyAll</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a7aadaa9cb21ad4c60dcdaa366ad6c57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
-<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4decc0225f720e49ae770fe263fb7fca" id="r_a4decc0225f720e49ae770fe263fb7fca"><td class="memItemLeft" align="right" valign="top"><a id="a4decc0225f720e49ae770fe263fb7fca" name="a4decc0225f720e49ae770fe263fb7fca"></a>
+std::vector&lt; <a class="el" href="class_observer.html">Observer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>observers</b></td></tr>
+<tr class="memdesc:a4decc0225f720e49ae770fe263fb7fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of observers. <br /></td></tr>
+<tr class="separator:a4decc0225f720e49ae770fe263fb7fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Entry point for the Blackjack game. Runs a complete game session. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Concrete subject class implementing the observer pattern. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>headers/<a class="el" href="_observer_8h_source.html">Observer.h</a></li>
+<li>src/<b>Observer.cpp</b></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0

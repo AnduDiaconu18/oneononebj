@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rank_0',['rank',['../class_card.html#a49353d2c0122828982490d640d7ebb4c',1,'Card']]]
+  ['instance_0',['instance',['../class_singleton_deck.html#afe8cf8ccb766d249a9a00881265b7b2e',1,'SingletonDeck']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['name',['../class_player_base.html#a7499d85861bf268fa14b0e89bb399956',1,'PlayerBase']]]
+  ['hand_0',['hand',['../class_player_base.html#acfdb4e7e8aeca5ef644d728dee74c8e9',1,'PlayerBase']]]
 ];
